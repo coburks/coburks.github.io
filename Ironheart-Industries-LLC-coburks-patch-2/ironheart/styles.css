@@ -1,0 +1,111 @@
+
+/* 56a0d8 is the hex code for the shortcut icon */
+
+
+
+
+
+/*header top of page style */
+
+
+
+.header {
+    position: fixed;
+    align-content: center;
+
+
+    top: 0px;
+    left: 0px;
+    width: 99.6%;
+}
+
+.header {
+    border-style: solid;
+    border-color: grey;
+    background-color: white;
+
+}
+
+.nav {
+    text-align: right;
+}
+
+/*body style */
+
+body#index {
+    
+
+    
+    background-color: #8b8a8a;
+    font-family: sans-serif;
+  
+  
+  }
+  
+
+
+
+/*body headers home/about/contact/gallery style */
+.container {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+    
+
+
+
+
+.home {
+    margin: 5%; /* this creates an initial gap between flexbox items */
+    border-style: solid;
+    border-color: purple;
+    padding: 5%; /* this creates the second gap between flexbox items, together it is 10% */
+    
+    
+}
+
+.about {
+    margin: 5%;
+    border-style: solid;
+    border-color: blue;
+    padding: 5px;
+    
+    
+}
+
+.gallery {
+    margin: 5%;
+    border-style: solid;
+    border-color: green;
+    padding: 5%;
+    
+    
+}
+
+.contact {
+    margin: 5%;
+    border-style: solid;
+    border-color: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 5%;
+
+}
+
+
+/* table caption class style */
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+
+#headerLogo {
+    width: 100px;
+    
+    float: left;
+    margin-right: 10px;
+}
