@@ -1,0 +1,249 @@
+/* /* 56a0d8 is the hex code for the shortcut icon
+/*
+ * TODO
+ * - find a font that is a close match for Ironheart branding
+ * - media conditions for scaling / wrapping
+ */
+/* 
+ /* variables */
+:root{
+  /* colors */
+  --text-clr: #000; 
+  --header-bg-clr: #F7F7FF;
+  --primary-clr: #14142D;
+  --primary-hlt: #56A0D8;
+  --cont-bg-clr: #14142D;
+  --cont-accent-clr: #253758;
+  --text-shadow-clr: #444111;
+
+  /* font size */
+  --font-size: 100%;
+  --header-big: 1.15em;
+  --article-title: 1.5em;
+  --article-p: 1.05em;
+ 
+  /* images */
+  --bg-img-1-offset-y: -20vh;
+  --bg-img-1-offset-x: 0vw;
+
+}
+
+/* defaults */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--primary-clr);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: var(--bg-clr);
+}
+
+header{
+  /* sticky header bar */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* end sticky header */
+  padding-top: 2px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: var(--header-bg-clr);
+  border-bottom: solid;
+  border-color: var(--primary-hlt);
+}
+
+header * {
+  background-color: var(--header-bg-clr);
+}
+
+.header-content img{
+  background-color: initial;
+  position: relative;
+  top: 7px;
+}
+
+.header-content{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5em;
+  padding-right: 12px;
+}
+
+#header-title{
+  font-size: var(--header-big);
+}
+
+.header-content ul{
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-content li{
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0 3px;
+}
+
+.header-content li:hover{
+  color: var(--primary-hlt);
+  border-bottom-style: solid;
+  cursor: pointer;
+}
+
+.header-content li:hover * {
+  color: var(--primary-hlt);
+}
+/*body style */
+/*body headers home/about/contact/gallery style */
+.container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.initial{
+  height: 71vw;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.container section{
+  margin: 20% 5% 20%; /* this creates an initial gap between flexbox items */
+  padding: 2% 5% 3%; /* this creates the second gap between flexbox items, together it is 10% */
+  border-top-style: solid;
+  border-width: 6px;
+  border-radius: 5px;
+  border-color: var(--cont-accent-clr);
+  background-color: var(--cont-bg-clr);
+  opacity: 0.95;
+}
+
+section{
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.contact-section{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.gallery-section{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+section * {
+  opacity: 1.0;
+  color: #F7F7FF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section .article-title{
+  font-size: var(--article-title);
+  font-weight: 600;
+  text-shadow: 0 0 7px var(--text-shadow-clr);
+}
+
+.flex-container4{
+    margin: 5%; /* this creates an initial gap between flexbox items */
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    background-color: #d5d5d5;
+    border-radius: 20px;
+    outline-style: solid;
+    outline-color: #1e1e1e;
+    outline-width: 4px;
+    padding: 5%; /* this creates the second gap between flexbox items, together it is 10% */
+
+  }
+
+/* Gallery section */ 
+.beforeafter{
+  object-fit:contain;
+  width:20vw;
+  height:20vw;
+}
+
+.rainbow{
+  scale: 80%;
+}
+
+.hours{
+  caption-side: bottom;
+} 
+
+.table-title{
+  text-align: inherit;
+} 
+
+.formsubmit{
+  width: 60px;
+  color: #000;
+  align-self: center;
+}
+
+.textarea1{
+  resize: none;
+  height: 100px;
+  width: 20vh;
+}
+
+.forminfo{
+  width: 20vh;
+  color: black;
+}
+.textarea1{
+  color: black;
+}
+
+@media all and (min-width: 421px) {
+
+.logo{
+  height: 80px;
+  width: 80px;  
+}
+
+body{
+  background-color: #253758; 
+}
+
+}
+@media all and (max-width: 420px) {
+ 
+  .logo {
+    height: 30px;
+    width: 30px;
+    
+  }
+body{
+  font-size: 100%;
+  background-color:    #14142D;
+  
+  font-size: 100%;
+
+}
+.header-content{
+  font-size: 100%;
+}
+}
