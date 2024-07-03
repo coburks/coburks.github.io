@@ -1,20 +1,81 @@
 html {
   background-color: #1b1b1e;
   color: #cccccc;
+  /* fix line height in all browsers */
+  line-height: 1.15;
+  /* prevent adjustments of font size after orientation changes in iOS */
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+body {
+  /* remove margin in all browsers */
+  margin: 0;
+}
+a:link /*css for page links*/ {
+  color: cyan;
 }
 
-a:link /*css for page links*/{
-    color: cyan;
+a:visited /*css for page links*/ {
+  color: cyan;
 }
 
-a:visited /*css for page links*/{
-    color: cyan;
+a:hover /*css for page links*/ {
+  color: #34b37c;
 }
 
-a:hover /*css for page links*/{
-    color: #34b37c;
+a:active /*css for page links*/ {
+  color: #f1e3ef;
 }
 
-a:active /*css for page links*/{
-    color: #e333cc;
+a.current {
+  color: #e76bd6;
+}
+header {
+  max-width: 34rem;
+  margin-top: 16px;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+main {
+  max-width: 38rem;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.flex-container1 {
+  padding-left: 8px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--light-grey-color);
+  margin: 16px 0;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+ol,
+ul {
+  padding-left: 24px;
+}
+
+footer {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--dark-grey-color);
 }
