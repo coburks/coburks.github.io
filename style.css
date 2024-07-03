@@ -1,0 +1,20 @@
+html {
+  background-color: #1b1b1e;
+  color: #cccccc;
+}
+
+a:link /*css for page links*/{
+    color: cyan;
+}
+
+a:visited /*css for page links*/{
+    color: cyan;
+}
+
+a:hover /*css for page links*/{
+    color: #34b37c;
+}
+
+a:active /*css for page links*/{
+    color: #e333cc;
+}
